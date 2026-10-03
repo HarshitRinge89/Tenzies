@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #0B2434;
+  margin: 0;
+  padding:20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+div#root{
+  height: 100%;
+}
+main{
+  height: 60%;
+  background-color: #F5F5F5;
+  border-radius:5px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.dice-container{
+  display: grid;
+  grid-template: auto auto /repeat(5,1fr);
+  gap: 20px;
+}
+.dice-container button{
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 2px 2px rgbs(0,0,0,0.15);
+  background-color: hsl(0,0%,100%);
+  font-size: 1.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: hsl(0,0%,0%);
+  font-family: Karla,sans-serif;
+}
+.roll-button{
+  background-color: blue;
+  color: aliceblue;
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-family: Karla,sans-serif;
+  cursor: pointer;
+}
