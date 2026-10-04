@@ -8,18 +8,27 @@ body{
   height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: Karla,sans-serif;
 }
 div#root{
   height: 100%;
 }
+h1{
+  margin:0;
+}
 main{
-  height: 60%;
-  background-color: #F5F5F5;
+  height: 70%;
+  background-color: hsl(0,0%,90%);
   border-radius:5px;
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  font-weight: 400;
+}
+.title{
+  font-weight: 700;
+  font-size: 3rem;
 }
 .dice-container{
   display: grid;
@@ -31,7 +40,7 @@ main{
   width: 50px;
   border-radius: 10px;
   border: none;
-  box-shadow: 0px 2px 2px rgbs(0,0,0,0.15);
+  box-shadow: 0px 2px 2px rgb(0,0,0,0.15);
   background-color: hsl(0,0%,100%);
   font-size: 1.75rem;
   font-weight: bold;
@@ -42,9 +51,11 @@ main{
 .roll-button{
   background-color: blue;
   color: aliceblue;
+  
   padding: 10px;
+  white-space: nowrap;
   height: 50px;
-  width: 100px;
+  width: 150px;
   border: none;
   border-radius: 6px;
   font-size: 1.2rem;
